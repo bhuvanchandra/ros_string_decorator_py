@@ -10,7 +10,7 @@ def callback(data):
     global decoration
     global pub
     decorated_str = "%s %s" % (decoration, data)
-    pub.publish(data)
+    pub.publish(decorated_str)
     rospy.loginfo(decorated_str)
 
 def string_decorator():
