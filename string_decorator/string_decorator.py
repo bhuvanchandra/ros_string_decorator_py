@@ -9,7 +9,7 @@ pub = None
 def callback(data):
     global decoration
     global pub
-    decorated_str = "%s %s" % (decoration, data)
+    decorated_str = "%s %s" % (decoration, data.data)
     pub.publish(decorated_str)
     rospy.loginfo(decorated_str)
 
