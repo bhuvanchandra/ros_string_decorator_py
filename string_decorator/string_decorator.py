@@ -3,7 +3,7 @@
 import rospy
 from std_msgs.msg import String
 
-decoration = "[Rapyuta Robotics] "
+decoration = " Rapyuta Robotics "
 pub = None
 
 def callback(data):
