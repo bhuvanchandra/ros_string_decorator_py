@@ -16,8 +16,8 @@ def callback(data):
 def string_decorator():
     global pub
     rospy.init_node('string_decorator', anonymous=True)
-    pub = rospy.Publisher('chatter_decorated', String, queue_size=10)
-    rospy.Subscriber("chatter", String, callback)
+    pub = rospy.Publisher('telemetry_decorated', String, queue_size=10)
+    rospy.Subscriber("telemetry", String, callback)
     rospy.spin()
 
 if __name__ == '__main__':
